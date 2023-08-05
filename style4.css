@@ -1,0 +1,467 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+.container-fluid {
+    background: linear-gradient(90deg, rgba(72, 160, 107, 1) 18%, rgba(161, 255, 199, 1) 99%);
+    height: 220vh;
+    width: 100%;
+    position: relative;
+}
+
+.rounded {
+    position: absolute;
+    top: 3vh;
+    left: 45%;
+    width: 5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.login {
+    border: none;
+    background-color: rgb(47, 235, 47);
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    position: absolute;
+    top: 25vh;
+    left: 40%;
+    height: 2rem;
+    width: 5rem;
+    padding-left: 2px;
+    padding-top: 2px;
+    border-radius: 5px;
+}
+
+#pop-up {
+    background-color: #fff;
+    height: 19rem;
+    position: absolute;
+    top: 60vh;
+    left: 25%;
+    width: 50%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .15);
+}
+
+
+#info {
+    padding-top: 30px;
+    padding-left: 8px;
+    padding-right: 10px;
+    overflow: auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    color: #000;
+    font-weight: 500;
+    margin-left: 35%;
+}
+
+#close {
+    border: none;
+    background-color: red;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 15vh;
+    left: 36%;
+    height: 2rem;
+    width: 5rem;
+    padding-left: 2px;
+    padding-top: 2px;
+    margin-left: 35%;
+}
+
+#pop-out {
+    background-color: #fff;
+    height: 15rem;
+    position: absolute;
+    top: 60vh;
+    left: 25%;
+    width: 50%;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .15);
+}
+
+
+#detail {
+    padding-top: 30px;
+    padding-left: 8px;
+    padding-right: 10px;
+    overflow: auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    color: #000;
+    font-weight: 500;
+}
+
+.container-fluid .card {
+    width: 50%;
+    height: 175vh;
+    text-align: center;
+    border: none;
+    box-shadow: 0px 7px 9px 5px #292828fe;
+    position: relative;
+    left: 25%;
+    top: 22vh;
+    border-radius: 8px;
+    display: flex;
+    flex: 1;
+    background: linear-gradient(90deg, rgba(72, 160, 107, 1) 18%, rgba(161, 255, 199, 1) 99%);
+    transition: 0.5s ease-in-out;
+}
+
+.card .card-title {
+    font-size: 25px;
+    font-weight: 600;
+    color: green;
+    margin-right: 8%;
+}
+
+#form{
+    margin-top: 10vh;
+    line-height: 3;
+    width: 80%;
+    margin-left: 10%;
+}
+
+#user_email::placeholder {
+    color: #bfb8b8;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+#username::placeholder {
+    color: #bfb8b8;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+#user_phone::placeholder {
+    color: #bfb8b8;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+#user_password::placeholder {
+    color: #bfb8b8;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+#confirm_password::placeholder {
+    color: #bfb8b8;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+#user_address::placeholder {
+    color: #bfb8b8;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+#user_email{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#username{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#user_phone{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#user_password{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#confirm_password{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#user_address{
+    font-weight: bold;
+    font-size: 15px;
+}
+label{
+    color: #464646;
+    font-weight: 500;
+    float: left;
+    font-size: 14px;
+    letter-spacing: 0.02px;
+}
+
+.form-check  #exampleCheck1{
+    height: 4vh;
+    width: 5%;
+    right: 90%;
+    cursor: pointer;
+   
+}
+
+#font{
+    margin-left: 10%;
+    margin-top: 2vh;
+    font-family: sans-serif;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card .btn {
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.2s, color 0.2s;
+    top: 10vh;
+    background-color: orange;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    height: 3rem;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+    opacity: 0;
+    transition: left 0.5s, opacity 0.5s;
+}
+
+.btn:hover {
+    background-color: darkgreen;
+    color: white;
+}
+
+.btn:hover::before {
+    left: 100%;
+    opacity: 1;
+}
+
+.card-footer {
+    margin-top: 20vh;
+    background: linear-gradient(90deg, rgba(72, 160, 107, 1) 10%, rgba(161, 255, 199, 1) 100%);
+    border: none;
+}
+
+#text{
+    color: #6c757d;
+    font-weight: 500;
+}
+
+.card-footer a:hover {
+    text-decoration: none;
+}
+
+.card-footer a {
+    margin-left: 2%;
+    color: brown;
+    font-weight: 350;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+#error{
+    color: brown;
+    font-size: 12px;
+}
+
+#invalid{
+    color: brown;
+    font-size: 12px;
+}
+
+#message{
+    color: brown;
+    font-size: 12px;
+    line-height: normal;
+}
+
+#errorText{
+    color: brown;
+    font-size: 12px;
+}
+
+#errorTxt {
+    color: brown;
+    font-size: 12px;
+}
+
+
+
+
+@media (min-width: 421px) and (max-width: 1000px) {
+
+    .container-fluid .card {
+        width: 80%;
+        position: relative;
+        left: 10%;
+        height: 78rem;
+    }
+
+    .container-fluid {
+        background: linear-gradient(90deg, rgba(72, 160, 107, 1) 18%, rgba(161, 255, 199, 1) 99%);
+        height: 220vh;
+        width: 100%;
+        position: relative;
+    }
+
+    .rounded {
+        position: absolute;
+        top: 3vh;
+        left: 45%;
+        width: 15%;
+    }
+
+    .form-check #exampleCheck1 {
+        width: 10%;
+        height: 2rem;
+    }
+
+}
+
+@media (max-width: 420px) {
+
+    .container-fluid .card {
+        width: 100%;
+        position: relative;
+        left: 0%;
+        height: 72rem;
+    }
+
+    .container-fluid {
+        background: linear-gradient(90deg, rgba(72, 160, 107, 1) 18%, rgba(161, 255, 199, 1) 99%);
+        height: 235vh;
+        width: 100%;
+        position: relative;
+    }
+
+    .rounded {
+        position: absolute;
+        top: 10vh;
+        left: 45%;
+        width: 15%;
+    }
+
+    .form-check #exampleCheck1 {
+        width: 10%;
+        height: 2rem;
+    }
+
+    #pop-up{
+        width: 90%;
+        left: 5%;
+    }
+}
+
+@media (min-width:614px) and (max-width: 1000px){
+    .rounded{
+        width: 10%;
+    }
+}
+
+@media(min-width: 440px) and (max-width: 700px){
+    #info{
+        margin-left: 25%;
+    }
+    .login{
+        left: 34%;
+    }
+}
+
+@media(min-width: 390px) and (max-width: 440px) {
+    #info {
+        margin-left: 27%;
+    }
+
+    .login {
+        left: 37%;
+    }
+}
+
+@media(min-width: 300px) and (max-width: 390px) {
+    #info {
+        margin-left: 25%;
+    }
+
+    .login {
+        left: 36%;
+    }
+}
+
+@media (max-width: 299px) {
+    #info {
+        margin-left: 25%;
+        font-size: 12px;
+    }
+
+    .login {
+        left: 34%;
+    }
+}
+
+@media (min-width: 1300px) {
+    #info {
+        font-size: 25px;
+        margin-left: 20%;
+    }
+
+    #pop-up{
+        width: 30%;
+        left: 35%;  
+    }
+
+    .login {
+        left: 37%;
+    }
+}
+
+@media(min-width: 820px)and (max-width: 820.9px){
+    #info {
+            margin-left: 25%;
+            font-size: 20px;
+    }
+
+    .login {
+        left: 37%;
+        top: 15vh;
+    }
+}
+
+@media(min-width: 768px)and (max-width: 768.9px) {
+    #info {
+        margin-left: 25%;
+        font-size: 20px;
+    }
+
+    .login {
+        left: 37%;
+        top: 15vh;
+    }
+}
+
+@media (max-width: 1000px) and (orientation: landscape) {
+    .container-fluid {
+        height: 500vh;
+    }
+
+    .container-fluid .card{
+        top: 30vh;
+    }
+}

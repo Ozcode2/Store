@@ -1,0 +1,199 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container-fluid {
+    background: linear-gradient(90deg, rgba(72, 160, 107, 1) 18%, rgba(161, 255, 199, 1) 99%);
+    height: 130vh;
+    width: 100%;
+    position: relative;
+    top: 0;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.762);
+    position: relative;
+    min-height: 100vh;
+    min-width: 100%;
+    top: 8vh;
+}
+
+#sub-title {
+    font-size: 1rem;
+    color: #fff;
+    padding-top: 18px;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 13px;
+    margin-left: 10%;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    left: 20%;
+    top: 0vh;
+}
+
+#totalCounter {
+    position: absolute;
+    margin-top: -5vh;
+    margin-left: 4%;
+    background-color: #F44336;
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+#trolley {
+    margin-right: 4px;
+}
+
+#sub-title:hover {
+    color: orange;
+    text-decoration: none;
+}
+
+.nav-item:hover {
+    background-color: orange;
+    border-radius: 5px;
+}
+
+.nav-item {
+    margin: 10%;
+    transition: 0.4s ease-in-out;
+    display: flex;
+}
+
+.close {
+    position: absolute;
+    top: 1vh;
+    left: 93%;
+    text-align: none;
+}
+
+#txt {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#txt:hover {
+    color: black;
+}
+
+.navbar i {
+    padding-top: 10px;
+    padding-left: 5px;
+    color: white;
+}
+
+@keyframes fade-animation {
+    0% {
+        opacity: 1;
+        color: gold;
+        border-color: gold;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#img {
+    cursor: pointer;
+    animation: anim 2s infinite;
+}
+
+@keyframes anim {
+    0% {
+        opacity: 1;
+        color: pink;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#dropdownMenuButton {
+    margin-top: 2vh;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+#use {
+    margin-right: 7px;
+    display: inline;
+}
+
+.dropdown .dropdown-menu {
+    background-color: #6c757d;
+}
+
+.dropdown-item {
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.dropdown .dropdown-item:hover {
+    background-color: #6c757d;
+    color: white;
+}
+
+#dropdownMenuButton {
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.5s, color 1s;
+    height: 4em;
+    margin-top: 1vh;
+}
+
+#dropdownMenuButton::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+    opacity: 0;
+    transition: left 0.5s, opacity 0.5s;
+}
+
+#dropdownMenuButton:hover {
+    background-color: orange;
+    color: #333;
+}
+
+#dropdownMenuButton:hover::before {
+    left: 100%;
+    opacity: 1;
+}
+
+#userGreeting {
+    position: absolute;
+    font-size: 20px;
+    left: 42%;
+    top: 2vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
